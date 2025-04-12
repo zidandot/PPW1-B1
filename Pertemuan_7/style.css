@@ -1,0 +1,442 @@
+*{
+    font-family: "Kantumruy Pro";
+    margin: 0;
+    color: white;
+}
+body{
+    width: 100%;
+}
+#logo{
+    width: 100px;
+    height: 55px;
+    transition: 0.5s;
+}
+ul{
+    display: flex;
+    font-size: 20px;
+    gap: 50px;
+}
+.navi a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navi a:hover{
+    font-size: 22px;
+    font-weight: bold;
+}
+.navi{
+    background-color: #74929F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    max-width: 100vw;
+}
+.satu{
+    background-color: #74929F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 676px;
+    font-size: 25px;
+}
+#hasatu{
+    font-size: 120px;
+    height: 300px;
+}
+#satudua{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+.satu button{
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background-color: #A4B3C1;
+    font-size: 20px;
+}
+.dua{
+    background-color: #B5B5B5;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    min-height: 504px;
+    gap: 200px;
+}
+#duadua{
+    align-self: center;
+}
+#duadua h1{
+    font-size: 48px;
+}
+#duadua p{
+    font-size: 27px;
+}
+.dua img{
+    align-self: center;
+    border-radius: 30px;
+}
+.tiga{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 1100px;
+    background-color: #89A0AA;
+    padding: 50px;
+    gap: 40px;
+}
+.tiga h1{
+    font-size: 48px;
+}
+
+.tigatiga img{
+    width: 82px;
+}
+.tigatiga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.tigatiga .kotak3{
+    width: 300px;
+    height: 370px;
+    border-radius: 30px;
+    padding: 36px;
+    background-color: white;
+}
+.judul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 70px;
+}
+.kotak3 h3, 
+.kotak3 li{
+    color: black;
+}
+.kotak3 h3{
+    height: 90px;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tigatiga ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 18px;
+}
+ul{
+    width: fit-content;
+}
+li{
+    width: fit-content;
+}
+.empat{
+    background-color: #B5B5B5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 503px;
+}
+.empat h1{
+    padding-bottom: 70px;
+    font-size: 48px;
+}
+.kotakempat{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.empatempat{
+    width: 240px;
+    height: 240px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.empatempat h4, 
+.empatempat p{
+    color: black;
+}
+.empatempat img{
+    width: 87px;
+    height: 66px;
+    border-radius: 15px;
+}
+.lima{
+    background-color: #74929F;
+    min-height: 627px;
+    padding: 50px;
+}
+.lima h1{
+    text-align: center;
+    font-size: 48px;
+    height: 150px;
+}
+.lima div{
+    margin: 10px;
+    padding-left: 150px;
+    padding-bottom: 15px;
+}
+.lima h4{
+    font-size: 27px;
+}
+.lima p{
+    font-size: 20px;
+}
+.enam{
+    background-color: #89A0AA;
+    height: 295px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+}
+.enam button{
+    width: 222px;
+    height: 66.5px;
+    border-radius: 100px;
+    border: none;
+    font-size: 20px;
+    background-color: #A4B3C1;
+}
+.enam div h1{
+    font-size: 48px;
+}
+.enam div p{
+    font-size: 20px;
+}
+footer{
+    background-color: #B5B5B5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding: 50px;
+    gap: 200px;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-wrap: wrap;
+    justify-content: center;
+}
+footer h4{
+    font-size: 27px;
+    display: flex;
+
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+}
+
+@media(max-width: 1024px){
+    .dua{
+        gap: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .empat{
+        padding: 50px;
+    }
+    .kotakempat{
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .enam{
+        gap: 200px;
+    }
+}
+
+@media(max-width: 768px){
+    .navi{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    ul{
+        gap: 50px;
+    }
+    .satu{
+        min-height: 710px;
+        padding: 30px;
+    }
+    #hasatu{
+        font-size:80px;
+        height: 250px;
+    }
+    #satudua p{
+        font-size: 25px;
+    }
+    .dua{
+        height: 100%;
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px;
+    }
+    .tiga{
+        gap: 10px;
+        min-height: 1150px;
+    }
+        .tiga h1{
+            padding-bottom: 25px;
+        }
+        .tigatiga{
+            gap: 50px;
+        }
+        .tigatiga .kotak3{
+            width: 200px;
+            height: 270px;
+        }
+        .judul h3{
+            font-size: 25px;
+        }
+        .judul{
+            gap: 25px;
+        }
+        .tigatiga ul{
+            font-size: 15px;
+            gap: 0px;
+        }
+    .empat{
+        min-height: 900px;
+    }
+        .empat .kotakempat{
+            gap: 50px;
+        }
+    .lima{
+        min-height: 700px;
+    }
+        .lima div{
+            padding-left: 40px;
+        }
+    .enam{
+        gap: 100px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 20px;
+    }
+        .enam button{
+            width: 200px;
+            height: 60px;
+        }
+    footer{
+        gap: 20px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer ul{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 480px){
+    .navi{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+        .navi nav ul{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            padding-left: 5px;
+        }
+
+    .satu{
+        min-height: 100px;
+    }
+        #hasatu{
+            font-size: 60px;
+            height: 150px;
+        }
+        #satudua p{
+            font-size: 20px;
+        }
+
+    .dua img{
+        width: 100%;
+    }
+        #duadua h1{
+            font-size: 40px;
+        }
+        #duadua p{
+            font-size: 25px;
+        }
+
+    .tiga h1{
+        font-size: 40px;
+    }
+
+    .empat h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .lima{
+        min-height: 800px;
+    }
+        .lima h1{
+            font-size: 40px;
+        }
+        .lima h4{
+            font-size: 23px;
+        }
+
+    .enam{
+        gap: 0;
+    }
+    .enam div h1{
+        font-size: 35px;
+        height: 50px;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    footer ul,
+    footer p{
+        font-size: 15px;
+    }
+    footer h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
