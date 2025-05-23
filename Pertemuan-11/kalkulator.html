@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <div style="border: 2px solid; margin-left: 580px; margin-right: 580px; padding: 20px; background-color: darkgrey;">
+        <h1 style="text-align: center;">Kalkulator</h1>
+
+        <div style="display: flex; justify-content: center; align-items: center; gap: 50px; flex-direction: column;">
+            <button onclick=inputAngka() style="width: 250px; height: 40px; border-radius: 30px;">Masukkan angka!</button>
+            <div id="hasil"></div>
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div>
+                    <button onclick=tambah() style="margin: 20px; height: 40px; width: 100px; border-radius: 30px;">Tambah (+)</button>
+                    <button onclick=kurang() style="margin: 20px; height: 40px; width: 100px; border-radius: 30px;">Kurang (-)</button>
+                </div>
+                <div>
+                    <button onclick=kali() style="margin: 20px; height: 40px; width: 100px; border-radius: 30px;">Kali (x)</button>
+                    <button onclick=bagi() style="margin: 20px; height: 40px; width: 100px; border-radius: 30px;">Bagi (/)</button>
+                </div>
+            </div>
+            <button onclick=hapus() style="height: 40px; width: 100px; border-radius: 30px;">Hapus</button>
+        </div>
+    </div>
+
+    <script>
+        var bil1, bil2, hasil
+
+        function inputAngka() {
+            bil1 = parseInt(prompt(("Masukkan bilangan pertama")))
+
+            if (bil1) {
+                bil2 = parseInt(prompt(("Masukkan bilangan kedua")))
+
+                if (bil2) {
+                    alert("Pilih operasi")
+                }
+                else {
+                    alert("Masukin bilangan keduanya!!")
+                }
+            }
+            else {
+                alert("Masukin bilangannya!!")
+            }
+        }
+
+        function tambah() {
+            hasil = document.getElementById("hasil")
+            let hasilTambah = bil1 + bil2
+            hasil.innerHTML = "Hasilnya Penjumlahan: " + hasilTambah
+        }
+
+        function kurang() {
+            hasil = document.getElementById("hasil")
+            let hasilKurang = bil1 - bil2
+            hasil.innerHTML = "Hasil Pengurangan: " + hasilKurang
+        }
+
+        function kali() {
+            hasil = document.getElementById("hasil")
+            let hasilKali = bil1 * bil2
+            hasil.innerHTML = "Hasil Perkalian: " + hasilKali
+        }
+
+        function bagi() {
+            hasil = document.getElementById("hasil")
+            let hasilBagi = bil1 / bil2
+            hasil.innerHTML = "Hasil Pembagian: " + hasilBagi
+        }
+
+        function hapus() {
+            hasil = document.getElementById("hasil")
+            bil1 = 0
+            bil2 = 0
+            hasil.innerHTML = ""
+        }
+    </script>
+</body>
+</html>
